@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔰RIZKY APP STORE🔰</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background: black;
+        }
+        video.bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .overlay {
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .overlay h1, .overlay p, nav a, .product h3, .product p, footer {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        header {
+            font-size: 30px;
+            color: #00ff88;
+            padding: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #00ff88;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: #00ff88;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<video class="bg-video" id="bgvid" controls poster="" preload="auto">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="overlay">
+    <header>🔰RIZKY APP STORE🔰</header>
+    <nav>
+        <a href="#produk">Produk Panel</a>
+        <a href="https://chat.whatsapp.com/J58JyghbGTEDulAXrUlRyh" target="_blank">Gabung Grup</a>
+    </nav>
+    <section class="banner">
+        <h1>Selamat datang di 🔰RIZKY APP STORE🔰</h1>
+        <p>Tempat jual beli panel terpercaya & murah</p>
+        <a href="https://chat.whatsapp.com/J58JyghbGTEDulAXrUlRyh" class="btn" target="_blank">Gabung Grup WhatsApp</a>
+    </section>
+</div>
+
+<section id="produk" class="products">
+    <div class="product">
+        <h3>Panel WhatsApp Premium</h3>
+        <p>Kirim pesan otomatis, menu interaktif, auto-respon & pengingat</p>
+        <p><strong>Harga: Rp25.000</strong></p>
+        <a href="https://wa.me/6283850540570" class="btn" target="_blank">Pesan Sekarang</a>
+    </div>
+    <div class="product">
+        <h3>Panel SMM Instagram & TikTok</h3>
+        <p>Auto followers, like, views. Cocok untuk reseller</p>
+        <p><strong>Harga: Rp15.000</strong></p>
+        <a href="https://wa.me/6283850540570" class="btn" target="_blank">Pesan Sekarang</a>
+    </div>
+    <div class="product">
+        <h3>Panel Bot WA Payment</h3>
+        <p>Terima pembayaran otomatis. Cocok untuk jualan pulsa/top-up</p>
+        <p><strong>Harga: Rp30.000</strong></p>
+        <a href="https://wa.me/6283850540570" class="btn" target="_blank">Pesan Sekarang</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 RIZKY APP STORE. All rights reserved.
+</footer>
+
+</body>
+</html>
